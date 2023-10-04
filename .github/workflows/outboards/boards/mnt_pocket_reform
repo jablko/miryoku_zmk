@@ -1,0 +1,6 @@
+# Copyright 2023 Manna Harbour
+# https://github.com/manna-harbour/miryoku
+
+outboard_repository=jablko/pocket-reform-zmk-config
+outboard_ref=HEAD
+BOARD_ROOT="${GITHUB_WORKSPACE}/outboards/mnt_pocket_reform/config"
