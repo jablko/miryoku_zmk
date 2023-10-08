@@ -27,6 +27,8 @@ jobs:
       - run: west init -l config/
       - run: west update
       - run: git -C zmk/ config user.email "${GITHUB_ACTOR}"
+      - run: git -C zmk/ remote add jablko https://github.com/jablko/zmk.git
+      - run: git -C zmk/ pull jablko patch-1
       - run: git -C zmk/ remote add urob https://github.com/urob/zmk.git
       - run: git -C zmk/ pull urob HEAD
       - run: west zephyr-export
