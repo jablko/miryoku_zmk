@@ -342,16 +342,16 @@ U_NP,              U_NP,              &kp C_MUTE,        &kp C_STOP,        &kp 
 
 
 #define MIRYOKU_ALTERNATIVES_NUM_FLIP \
-&kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
-&kp SQT,           &kp N4,            &kp N5,            &kp N6,            &kp EQUAL,         &u_caps_word,      &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
-&kp GRAVE,         &kp N1,            &kp N2,            &kp N3,            &kp BSLH,          U_NA,              &u_to_U_NUM,       &u_to_U_FUN,       &kp RALT,          U_NA,              \
-U_NP,              U_NP,              &kp DOT,           &kp N0,            &kp MINUS,         &kp MINUS,         U_NA,              U_NA,              U_NP,              U_NP
+U_MT(LBRC, LBKT),  U_MT(AMPS, N7),    U_MT(ASTRK, N8),   U_MT(LPAR, N9),    U_MT(RBRC, RBKT),  U_NA,              &u_to_U_BASE,      &u_to_U_EXTRA,     &u_to_U_TAP,       U_BOOT,            \
+U_MT(DQT, SQT),    U_MT(DLLR, N4),    U_MT(PRCNT, N5),   U_MT(CARET, N6),   U_MT(PLUS, EQUAL), &u_caps_word,      &kp LSHFT,         &kp LCTRL,         &kp LALT,          &kp LGUI,          \
+U_MT(TILDE, GRAVE),U_MT(EXCL, N1),    U_MT(AT, N2),      U_MT(HASH, N3),    U_MT(PIPE, BSLH),  U_NA,              &u_to_U_NUM,       &u_to_U_FUN,       &kp RALT,          U_NA,              \
+U_NP,              U_NP,              U_MT(LPAR, DOT),   U_MT(RPAR, N0),    U_MT(UNDER, MINUS),U_MT(UNDER, MINUS),U_NA,              U_NA,              U_NP,              U_NP
 
 #define MIRYOKU_ALTERNATIVES_NUM \
-U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              &kp LBKT,          &kp N7,            &kp N8,            &kp N9,            &kp RBKT,          \
-&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &u_caps_word,      &kp EQUAL,         &kp N4,            &kp N5,            &kp N6,            &kp SQT,           \
-U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_NUM,       U_NA,              &kp BSLH,          &kp N1,            &kp N2,            &kp N3,            &kp GRAVE,         \
-U_NP,              U_NP,              U_NA,              U_NA,              &kp MINUS,         &kp MINUS,         &kp N0,            &kp DOT,           U_NP,              U_NP
+U_BOOT,            &u_to_U_TAP,       &u_to_U_EXTRA,     &u_to_U_BASE,      U_NA,              U_MT(LBRC, LBKT),  U_MT(AMPS, N7),    U_MT(ASTRK, N8),   U_MT(LPAR, N9),    U_MT(RBRC, RBKT),  \
+&kp LGUI,          &kp LALT,          &kp LCTRL,         &kp LSHFT,         &u_caps_word,      U_MT(PLUS, EQUAL), U_MT(DLLR, N4),    U_MT(PRCNT, N5),   U_MT(CARET, N6),   U_MT(DQT, SQT),    \
+U_NA,              &kp RALT,          &u_to_U_FUN,       &u_to_U_NUM,       U_NA,              U_MT(PIPE, BSLH),  U_MT(EXCL, N1),    U_MT(AT, N2),      U_MT(HASH, N3),    U_MT(TILDE, GRAVE),\
+U_NP,              U_NP,              U_NA,              U_NA,              U_MT(UNDER, MINUS),U_MT(UNDER, MINUS),U_MT(LPAR, N0),    U_MT(RPAR, DOT),   U_NP,              U_NP
 
 
 #define MIRYOKU_ALTERNATIVES_SYM_FLIP \
