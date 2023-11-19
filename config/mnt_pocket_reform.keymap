@@ -20,3 +20,7 @@ XXX  XXX  XXX  XXX  U_BTN1  XXX  XXX  U_BTN2  U_BTN3  XXX  XXX  XXX
     };
   };
 };
+
+#undef U_BOOT
+#define U_BOOT &u_sp_toggle
+MIRYOKU_DOUBLE_TAP_GUARD(u_sp_toggle, &sp_toggle)
